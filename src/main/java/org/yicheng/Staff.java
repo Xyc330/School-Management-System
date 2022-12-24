@@ -7,7 +7,6 @@ public class Staff extends Person{
     public Staff(String name, String role) {
         super(name);
         this.role = role;
-
         School.addPerson(this);
     }
 

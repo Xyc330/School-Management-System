@@ -17,7 +17,7 @@ public class Student extends Person{
 
 
     public int checkMyMark() {
-        System.out.printf("%s\'s mark is %d%n", this.name, this.mark);
+        System.out.printf("%s's mark is %d%n", this.name, this.mark);
         return this.mark;
     }
 

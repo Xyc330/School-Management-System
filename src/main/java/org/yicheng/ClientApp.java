@@ -2,7 +2,8 @@ package org.yicheng;
 
 
 public class ClientApp {
-
+    // ADD MORE COMMENTS
+    // YOU CAN'T REMEMBER EVERYTHING DUMBASS
     public static void main(String[] args) {
         Student s1 = new Student("John", 1);
         Student s2 = new Student("Bob", 2);

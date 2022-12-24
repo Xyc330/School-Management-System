@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e41fdd97-70bc-482f-8b64-ab02b80f8681" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/yicheng/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/yicheng/ClientApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/yicheng/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/yicheng/School.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/yicheng/Staff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/yicheng/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/yicheng/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+    <list default="true" id="e41fdd97-70bc-482f-8b64-ab02b80f8681" name="Changes" comment="Second Version">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yicheng/System Requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yicheng/schoolmanagementsystemv2.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yicheng/ClientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yicheng/ClientApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yicheng/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yicheng/Staff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yicheng/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yicheng/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yicheng/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yicheng/Teacher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="UML Class" />
       </list>
     </option>
   </component>
@@ -44,9 +46,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultPlantUmlFileTemplate": "UML Class",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RunManager">
@@ -85,12 +88,20 @@
       <option name="project" value="LOCAL" />
       <updated>1671332529105</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Second Version">
+      <created>1671333196128</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671333196128</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Second Version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Version" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

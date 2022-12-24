@@ -98,14 +98,15 @@ public class Teacher extends Person{
                 }
             });
         }else if(sortingOption == SortingOptions.BY_MARK) {
-            Collections.sort(list, new Comparator<Student>() {
+            list.sort(new Comparator<Student>() {
                 @Override
                 public int compare(Student s1, Student s2) {
-                    if(s1.getMark() != s2.getMark()) {
+                    if (s1.getMark() != s2.getMark()) {
                         return s2.getMark() - s1.getMark();
-                    }if(s1.getGrade() != s2.getGrade()) {
+                    }
+                    if (s1.getGrade() != s2.getGrade()) {
                         return s1.getGrade() - s2.getGrade();
-                    }else {
+                    } else {
                         return s1.getName().compareTo(s2.getName());
                     }
                 }
