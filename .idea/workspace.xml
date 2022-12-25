@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e41fdd97-70bc-482f-8b64-ab02b80f8681" name="Changes" comment="Second Version">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/yicheng/System Requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/yicheng/schoolmanagementsystemv2.puml" afterDir="false" />
+    <list default="true" id="e41fdd97-70bc-482f-8b64-ab02b80f8681" name="Changes" comment="gitignore .idea">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/yicheng/ClientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yicheng/ClientApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/yicheng/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yicheng/Staff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/yicheng/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yicheng/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/yicheng/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yicheng/Teacher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +42,7 @@
     "DefaultPlantUmlFileTemplate": "UML Class",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
   <component name="RunManager">
@@ -95,13 +88,35 @@
       <option name="project" value="LOCAL" />
       <updated>1671333196128</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="gitignore .idea">
+      <created>1671916292248</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671916292248</updated>
+    </task>
+    <task id="LOCAL-00004" summary="gitignore .idea">
+      <created>1671916362812</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671916362812</updated>
+    </task>
+    <task id="LOCAL-00005" summary="gitignore .idea">
+      <created>1671916461696</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671916461696</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Second Version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second Version" />
+    <MESSAGE value="gitignore .idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore .idea" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
