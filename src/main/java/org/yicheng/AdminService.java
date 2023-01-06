@@ -32,25 +32,25 @@ public class AdminService {
         if(Student.students.remove(name) == null){
             System.out.printf("Could not remove student %s%n", name);
         }
-        System.out.printf("Removed student %s", name);
+        System.out.printf("Removed student %s%n", name);
     }
     public static void removeTeacher(String name){
         if(Teacher.teachers.remove(name) == null){
             System.out.printf("Could not remove teacher %s%n", name);
         }
-        System.out.printf("Removed teacher %s", name);
+        System.out.printf("Removed teacher %s%n", name);
     }
     public static void removeStaff(String name){
         if(Staff.staves.remove(name) == null){
             System.out.printf("Could not remove staff %s%n", name);
         }
-        System.out.printf("Removed staff %s", name);
+        System.out.printf("Removed staff %s%n", name);
     }
     public static void removeAdmin(String name){
         if(Admin.admins.remove(name) == null){
             System.out.printf("Could not remove admin %s%n", name);
         }
-        System.out.printf("Removed admin %s", name);
+        System.out.printf("Removed admin %s%n", name);
     }
 
 
@@ -58,6 +58,10 @@ public class AdminService {
         return StudentService.getMyMark(name);
     }
     public static void setStudentMark(String name, int mark) {
+        if(mark < 0 || mark > 100){
+            System.out.printf("Invalid mark: %d%n", mark);
+            return;
+        }
         TeacherService.setStudentMark(name, mark);
     }
 
@@ -67,6 +71,11 @@ public class AdminService {
 
     // Directly sets the number of absences of a student
     public static void setStudentAttendance(String name, int absents){
+        if(absents < 0){
+            System.out.printf("Invalid absents: %d%n", absents);
+            return;
+        }
+
         Student s = Student.getStudent(name);
         if(s == null) {
             System.out.println("No student found");
@@ -118,7 +127,7 @@ public class AdminService {
         }
 
         s.setRole(role);
-        System.out.printf("Staff %s's role set to %s", name, role);
+        System.out.printf("Staff %s's role set to %s%n", name, role);
     }
 
 }

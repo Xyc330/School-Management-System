@@ -7,8 +7,6 @@ import java.util.List;
 
 public class TeacherService {
 
-
-
     // changes a student's mark, given their name
     public static void setStudentMark(String studentName, int mark) {
         Student s = Student.getStudent(studentName);

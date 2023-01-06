@@ -22,7 +22,7 @@ public class StudentService {
             return -1;
         }
 
-        System.out.printf("%s has been absent %d times.%n", s.getName(), s.getAbsents());
+        System.out.printf("%s has been absent %d times%n", s.getName(), s.getAbsents());
         return s.getAbsents();
     }
 
