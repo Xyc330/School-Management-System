@@ -12,7 +12,9 @@ public class Teacher extends Person{
         BY_GRADE,
         BY_MARK
     }
+    // students of an individual teacher are stored here
     public final HashSet<Student> students;
+    // All the teachers are stored in this HashMap
     public static HashMap<String, Teacher> teachers;
 
     static{

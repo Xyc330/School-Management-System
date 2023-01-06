@@ -6,9 +6,12 @@ import java.util.Iterator;
 import java.util.List;
 
 public class TeacherService {
+    // creates a new instance of the teacher
     public static void createNewTeacher(String name){
         new Teacher(name);
     }
+
+    // assigns a student to the class of a teacher, provided both their names
     public static void assignStudent(String teacherName, String studentName){
         Teacher t = Teacher.getTeacher(teacherName);
         if(t == null) {
@@ -26,35 +29,22 @@ public class TeacherService {
 
     }
 
-    public static int changeStudentMark(String teacherName, String studentName, int mark) {
-        Teacher t = Teacher.getTeacher(teacherName);
-        if(t == null) {
-            System.out.println("No teacher found");
-            return -1;
-        }
-        Student s = t.getStudent(studentName);
+
+    // changes a student's mark, given their name
+    public static void setStudentMark(String studentName, int mark) {
+
+        Student s = Student.getStudent(studentName);
         if(s == null) {
             System.out.println("No student found");
-            return -1;
+            return;
         }
 
         s.setMark(mark);
         System.out.printf("Set student %s's mark to %d%n", studentName, mark);
-        return s.getMark();
     }
 
-    public static int getStudentMark(String teacherName, String studentName) {
-        Teacher t = Teacher.getTeacher(teacherName);
-        if(t == null) {
-            System.out.println("No teacher found");
-            return -1;
-        }
-        Student s = t.getStudent(studentName);
-        if(s == null) {
-            System.out.printf("No student found for the teacher %s%n", teacherName);
-            return -1;
-        }
-
+    // Prints the mark of a student given their name
+    public static int getStudentMark(String studentName) {
         try {
             return StudentService.checkMyMark(studentName);
         }catch(Exception e){
@@ -63,6 +53,7 @@ public class TeacherService {
         }
     }
 
+    // Given the name of the teacher and an array of absent students, marks one absence in their records
     public static void takeAttendance(String teacherName, String ...absentStudentNames) {
         Teacher t = Teacher.getTeacher(teacherName);
         if(t == null) {
@@ -86,6 +77,7 @@ public class TeacherService {
 
     }
 
+    // Marks one absence for a student
     private static void markAbsence(String name) {
         Student s = Student.getStudent(name);
         if(s == null) {
@@ -95,7 +87,7 @@ public class TeacherService {
         s.setAbsents(s.getAbsents() + 1);
     }
 
-
+    // Prints all the students of a teacher in one of three ways, sorting by name, by mark or by grade
     public static void printAllStudents(String teacherName, Teacher.SortingOptions sortingOption) {
         Teacher t = Teacher.getTeacher(teacherName);
         if (t == null) {
