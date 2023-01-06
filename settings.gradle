@@ -1,0 +1,3 @@
+rootProject.name = 'School_Management_System'
+include 'src'
+
