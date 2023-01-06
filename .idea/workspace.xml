@@ -5,20 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9c4885-cb70-4310-a4fd-15e4a06ce675" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/main/java/org/yicheng/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/main/java/org/yicheng/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/main/java/org/yicheng/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/main/java/org/yicheng/ClientApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/main/java/org/yicheng/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/main/java/org/yicheng/TeacherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/yicheng/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/yicheng/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/yicheng/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/yicheng/StudentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

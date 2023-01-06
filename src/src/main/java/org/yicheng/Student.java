@@ -14,6 +14,7 @@ public class Student extends Person{
         this.grade = grade;
         this.mark = 0;
         this.absents = 0;
+        students.put(name, this);
     }
 
     public static Student getStudent(String name){

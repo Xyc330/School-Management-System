@@ -1,6 +1,13 @@
 package org.yicheng;
 
 public class StudentService {
+    public static void createNewStudent(String name, int grade){
+        new Student(name, grade);
+    }
+    public static void createNewStudent(String name, int grade, String teacher){
+        new Student(name, grade);
+        TeacherService.assignStudent(teacher, name);
+    }
 
     public static int checkMyMark(String name){
         Student s = Student.getStudent(name);
@@ -24,15 +31,7 @@ public class StudentService {
     }
 
     // Shouldn't these be in TeacherService?
-    public int MarkAbsence(String name) {
-        Student s = Student.getStudent(name);
-        if(s == null) {
-            System.out.println("No student found");
-            return -1;
-        }
-        s.setAbsents(s.getAbsents() + 1);
-        return s.getAbsents();
-    }
+
 
 
 }

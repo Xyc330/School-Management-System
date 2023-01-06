@@ -7,7 +7,7 @@ build/
 ### IntelliJ IDEA ###
 gradle/
 gradlew
-gradlew.bat
+*.bat
 *.gradle
 .idea/
 *.iws
