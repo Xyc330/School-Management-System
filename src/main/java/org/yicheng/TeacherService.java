@@ -6,33 +6,11 @@ import java.util.Iterator;
 import java.util.List;
 
 public class TeacherService {
-    // creates a new instance of the teacher
-    public static void createNewTeacher(String name){
-        new Teacher(name);
-    }
 
-    // assigns a student to the class of a teacher, provided both their names
-    public static void assignStudent(String teacherName, String studentName){
-        Teacher t = Teacher.getTeacher(teacherName);
-        if(t == null) {
-            System.out.println("No teacher found");
-            return;
-        }
-        Student s = Student.getStudent(studentName);
-        if(s == null) {
-            System.out.println("No student found");
-            return;
-        }
-
-        t.students.add(s);
-        System.out.printf("Assigned student %s to teacher %s!%n", studentName, teacherName);
-
-    }
 
 
     // changes a student's mark, given their name
     public static void setStudentMark(String studentName, int mark) {
-
         Student s = Student.getStudent(studentName);
         if(s == null) {
             System.out.println("No student found");
@@ -46,7 +24,7 @@ public class TeacherService {
     // Prints the mark of a student given their name
     public static int getStudentMark(String studentName) {
         try {
-            return StudentService.checkMyMark(studentName);
+            return StudentService.getMyMark(studentName);
         }catch(Exception e){
             System.out.printf("Student %s not found%n", studentName);
             return -1;

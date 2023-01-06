@@ -4,7 +4,7 @@ public class Student extends Person{
     private int grade;
     private int mark;
     private int absents;
-    private static final HashMap<String, Student> students;
+    public static final HashMap<String, Student> students;
 
     static{
         students = new HashMap<>();
@@ -15,6 +15,7 @@ public class Student extends Person{
         this.mark = 0;
         this.absents = 0;
         students.put(name, this);
+        System.out.printf("New student created: %s, grade: %d%n", name, grade);
     }
 
     public static Student getStudent(String name){

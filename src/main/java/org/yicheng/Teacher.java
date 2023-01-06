@@ -2,7 +2,6 @@ package org.yicheng;
 
 import java.util.HashSet;
 import java.util.HashMap;
-import java.util.Arrays;
 import java.util.Iterator;
 
 public class Teacher extends Person{
@@ -25,6 +24,7 @@ public class Teacher extends Person{
         super(name);
         this.students = new HashSet<>();
         teachers.put(name, this);
+        System.out.printf("New teacher created: %s%n", name);
     }
 
     public Student getStudent(String name) {
