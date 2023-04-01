@@ -4,41 +4,50 @@ import org.yicheng.dao.*;
 import org.yicheng.database.*;
 
 import java.util.Optional;
+import java.util.Set;
 
 public class AdminService {
 
-    public static void createNewStudent(String name){
+    public static int createNewStudent(String name){
         StudentDao studentDao = new StudentDao();
         Student student = new Student();
-        student.setId((int) Math.floor(Math.random()*Integer.MAX_VALUE));
+        int id = (int) Math.floor(Math.random()*Integer.MAX_VALUE);
+        student.setId(id);
         student.setName(name);
         studentDao.create(student);
+        return id;
     }
 
     // creates a new instance of a teacher
-    public static void createNewTeacher(String name){
+    public static int createNewTeacher(String name){
         TeacherDao teacherDao = new TeacherDao();
-        Teacher teacher = new Teacher();
-        teacher.setId((int) Math.floor(Math.random()*Integer.MAX_VALUE));
+        Teacher teacher = new Teacher("teacherName");
+        int id = (int) Math.floor(Math.random()*Integer.MAX_VALUE);
+        teacher.setId(id);
         teacher.setName(name);
         teacherDao.create(teacher);
+        return id;
     }
     // creates a new instance of a staff
-    public static void createNewStaff(String name, String role){
+    public static int createNewStaff(String name, String role){
         StaffDao staffDao = new StaffDao();
         Staff staff = new Staff();
-        staff.setId((int) Math.floor(Math.random()*Integer.MAX_VALUE));
+        int id = (int) Math.floor(Math.random()*Integer.MAX_VALUE);
+        staff.setId(id);
         staff.setName(name);
         staff.setRole(role);
         staffDao.create(staff);
+        return id;
     }
     // creates a new instance of an admin
-    public static void createNewAdmin(String name){
+    public static int createNewAdmin(String name){
         AdminDao adminDao = new AdminDao();
         Admin admin = new Admin();
-        admin.setId((int) Math.floor(Math.random()*Integer.MAX_VALUE));
+        int id = (int) Math.floor(Math.random()*Integer.MAX_VALUE);
+        admin.setId(id);
         admin.setName(name);
         adminDao.create(admin);
+        return id;
     }
 
 
@@ -73,6 +82,28 @@ public class AdminService {
             System.out.println("No staff found");
         }
 
+    }
+
+    // Retrieve
+
+    public static Set<Student> getAllStudents(){
+        StudentDao sd = new StudentDao();
+        return sd.getAll();
+    }
+
+    public static Set<Teacher> getAllTeachers(){
+        TeacherDao td = new TeacherDao();
+        return td.getAll();
+    }
+
+    public static Set<Staff> getAllStaves(){
+        StaffDao sd = new StaffDao();
+        return sd.getAll();
+    }
+
+    public static Set<Admin> getAllAdmins(){
+        AdminDao ad = new AdminDao();
+        return ad.getAll();
     }
 
 }

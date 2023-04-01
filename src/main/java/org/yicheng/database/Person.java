@@ -3,6 +3,12 @@ package org.yicheng.database;
 public class Person {
     protected Integer id;
     protected String name;
+    public Person(){
+
+    }
+    public Person(String name){
+        this.name = name;
+    }
 
     public Integer getId() {
         return id;
