@@ -1,7 +1,7 @@
 package org.yicheng.dao;
 
 import org.yicheng.database.Database;
-import org.yicheng.database.Admin;
+import org.yicheng.entity.Admin;
 
 
 public class AdminDao extends BaseDao<Admin> {

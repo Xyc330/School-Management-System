@@ -1,4 +1,4 @@
-package org.yicheng.database;
+package org.yicheng.entity;
 
 public class Staff extends Person{
 
@@ -20,6 +20,12 @@ public class Staff extends Person{
     }
 
 
-
-
+    @Override
+    public String toString() {
+        return "Staff{" +
+                "role='" + role + '\'' +
+                ", id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

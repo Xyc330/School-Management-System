@@ -1,4 +1,4 @@
-package org.yicheng.database;
+package org.yicheng.entity;
 
 public class Person {
     protected Integer id;

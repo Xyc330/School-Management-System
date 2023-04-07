@@ -1,5 +1,10 @@
 package org.yicheng.database;
 
+import org.yicheng.entity.Admin;
+import org.yicheng.entity.Staff;
+import org.yicheng.entity.Student;
+import org.yicheng.entity.Teacher;
+
 import java.util.HashMap;
 
 

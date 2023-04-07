@@ -1,27 +1,31 @@
 package org.yicheng;
 
-import org.yicheng.database.Admin;
+import org.yicheng.entity.Admin;
+import org.yicheng.entity.Student;
+import org.yicheng.entity.record.Attendance;
 import org.yicheng.service.AdminService;
+import org.yicheng.service.StudentService;
 
 
 import java.util.Iterator;
+import java.util.Optional;
 import java.util.Set;
 
 public class ClientApp {
     public static void main(String[] args) {
-        // I'll improve the ID system later
-        int ad1 = AdminService.createNewAdmin("Ad Astra");
-        int ad2 = AdminService.createNewAdmin("Hello");
-        int ad3 = AdminService.createNewAdmin("World");
-        AdminService.removeAdmin(ad1);
+        Integer student1Id = AdminService.createNewStudent("John");
+//        AdminService.getAllStudents().forEach(System.out::println);
 
-        Set<Admin> admins = AdminService.getAllAdmins();
-        Iterator<Admin> iter = admins.iterator();
-        while(iter.hasNext()){
-            Admin next = iter.next();
-            System.out.println(next.getName());
-            System.out.println(next.getId());
-        }
+        AdminService.addAttendance("John", student1Id, "2023/04/06", Attendance.State.PRESENT);
+        AdminService.addAttendance("John", student1Id, "2023/04/07", Attendance.State.LATE);
+        AdminService.addPerformance("John", student1Id, "exam1", 80);
+        AdminService.addPerformance("John", student1Id, "exam2", 85);
+
+        StudentService.getLastAttendance(student1Id);
+        StudentService.getLastGrade(12);
+
+
+
 
         // Testing create people
 //        AdminService.createNewAdmin("Mrs.Smith");

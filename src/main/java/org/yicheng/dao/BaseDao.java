@@ -1,6 +1,6 @@
 package org.yicheng.dao;
 
-import org.yicheng.database.Person;
+import org.yicheng.entity.Person;
 
 import java.util.HashMap;
 import java.util.HashSet;
