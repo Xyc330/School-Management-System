@@ -17,16 +17,8 @@ public class PersonalPerformanceRecord {
         return studentName;
     }
 
-    public void setStudentName(String studentName) {
-        this.studentName = studentName;
-    }
-
     public Integer getStudentId() {
         return studentId;
-    }
-
-    public void setStudentId(Integer studentId) {
-        this.studentId = studentId;
     }
 
     public LinkedList<Grade> getRecord() {
