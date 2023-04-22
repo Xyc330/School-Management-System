@@ -1,17 +1,24 @@
-package org.yicheng.service;
+package org.yicheng.student;
 
 
 
-import org.yicheng.dao.StudentDao;
-
-import org.yicheng.entity.record.Attendance;
-import org.yicheng.entity.record.Grade;
+import org.yicheng.record.Attendance;
+import org.yicheng.record.Grade;
 
 
 import java.util.Optional;
 
 public class StudentService {
-
+    // This method will only find the first id that it sees, not necessary all repeated names
+    public static Integer getIdByName(String name){
+        StudentDao studentDao = new StudentDao();
+        Optional<Integer> id = studentDao.getIdByName(name);
+        if(id.isPresent()){
+            return id.get();
+        }
+        System.out.println("No student found by name");
+        return null;
+    }
 
     public static Attendance getLastAttendance(Integer studentId){
         StudentDao studentDao = new StudentDao();
@@ -28,7 +35,7 @@ public class StudentService {
             return att.get();
         }
         System.out.println("No attendance date found");
-        return null; // This is probably not good
+        return null;
     }
 
     public static Grade getLastGrade(Integer studentId){
@@ -45,8 +52,7 @@ public class StudentService {
             System.out.println(g.get());
             return g.get();
         }
-        System.out.println("No exam found");
-        return null; // This is probably not good
+        return null;
     }
 
 

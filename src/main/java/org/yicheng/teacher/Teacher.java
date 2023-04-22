@@ -1,6 +1,8 @@
-package org.yicheng.entity;
+package org.yicheng.teacher;
 
-public class Teacher extends Person{
+import org.yicheng.entity.Person;
+
+public class Teacher extends Person {
 
     public Teacher(String name) {
         super(name);

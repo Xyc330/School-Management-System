@@ -1,7 +1,7 @@
-package org.yicheng.dao;
+package org.yicheng.teacher;
 
+import org.yicheng.BaseDao;
 import org.yicheng.database.Database;
-import org.yicheng.entity.Teacher;
 
 public class TeacherDao extends BaseDao<Teacher> {
     public TeacherDao(){

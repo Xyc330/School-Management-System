@@ -1,6 +1,7 @@
-package org.yicheng.dao;
+package org.yicheng.staff;
 
-import org.yicheng.entity.Staff;
+import org.yicheng.BaseDao;
+import org.yicheng.staff.Staff;
 import org.yicheng.database.Database;
 
 

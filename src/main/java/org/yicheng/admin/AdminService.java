@@ -1,12 +1,13 @@
-package org.yicheng.service;
+package org.yicheng.admin;
 
-import org.yicheng.dao.*;
-import org.yicheng.entity.Admin;
-import org.yicheng.entity.Staff;
-import org.yicheng.entity.Student;
-import org.yicheng.entity.Teacher;
-import org.yicheng.entity.record.Attendance;
-import org.yicheng.entity.record.Grade;
+import org.yicheng.staff.Staff;
+import org.yicheng.staff.StaffDao;
+import org.yicheng.student.Student;
+import org.yicheng.teacher.Teacher;
+import org.yicheng.record.Attendance;
+import org.yicheng.record.Grade;
+import org.yicheng.student.StudentDao;
+import org.yicheng.teacher.TeacherDao;
 
 
 import java.util.Optional;

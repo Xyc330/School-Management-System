@@ -1,15 +1,12 @@
 package org.yicheng;
 
-import org.yicheng.entity.Admin;
-import org.yicheng.entity.Student;
-import org.yicheng.entity.record.Attendance;
-import org.yicheng.service.AdminService;
-import org.yicheng.service.StudentService;
+import org.yicheng.database.Database;
+import org.yicheng.record.Attendance;
+import org.yicheng.admin.AdminService;
+import org.yicheng.record.SummaryAttendanceRecord;
+import org.yicheng.student.StudentDao;
+import org.yicheng.student.StudentService;
 
-
-import java.util.Iterator;
-import java.util.Optional;
-import java.util.Set;
 
 public class ClientApp {
     public static void main(String[] args) {
@@ -20,9 +17,6 @@ public class ClientApp {
         AdminService.addAttendance("John", student1Id, "2023/04/07", Attendance.State.LATE);
         AdminService.addPerformance("John", student1Id, "exam1", 80);
         AdminService.addPerformance("John", student1Id, "exam2", 85);
-
-        StudentService.getLastAttendance(student1Id);
-        StudentService.getLastGrade(12);
 
 
 

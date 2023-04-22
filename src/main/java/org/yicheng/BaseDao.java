@@ -1,4 +1,4 @@
-package org.yicheng.dao;
+package org.yicheng;
 
 import org.yicheng.entity.Person;
 
@@ -8,7 +8,7 @@ import java.util.Optional;
 import java.util.Set;
 
 public class BaseDao<T extends Person> {
-    HashMap<Integer, T> map;
+    protected HashMap<Integer, T> map;
 
     public Optional<T> get(Integer id) {
         return Optional.ofNullable(map.get(id));

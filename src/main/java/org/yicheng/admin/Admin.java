@@ -1,6 +1,8 @@
-package org.yicheng.entity;
+package org.yicheng.admin;
 
-public class Admin extends Person{
+import org.yicheng.entity.Person;
+
+public class Admin extends Person {
     public Admin(){
 
     }

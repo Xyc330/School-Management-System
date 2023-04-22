@@ -1,4 +1,4 @@
-package org.yicheng.entity.record;
+package org.yicheng.record;
 
 import java.util.LinkedList;
 
@@ -27,5 +27,11 @@ public class PersonalPerformanceRecord {
 
     public void setRecord(LinkedList<Grade> record) {
         this.record = record;
+    }
+    public void addGrade(Grade grade){
+        this.record.add(grade);
+    }
+    public void addGrade(String exam, Integer grade){
+        this.record.add(new Grade(studentName, studentId, exam, grade));
     }
 }

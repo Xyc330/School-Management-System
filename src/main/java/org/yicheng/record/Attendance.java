@@ -1,4 +1,4 @@
-package org.yicheng.entity.record;
+package org.yicheng.record;
 
 public class Attendance {
     public enum State{

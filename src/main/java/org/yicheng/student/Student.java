@@ -1,9 +1,10 @@
-package org.yicheng.entity;
+package org.yicheng.student;
 
-import org.yicheng.entity.record.PersonalAttendanceRecord;
-import org.yicheng.entity.record.PersonalPerformanceRecord;
+import org.yicheng.entity.Person;
+import org.yicheng.record.PersonalAttendanceRecord;
+import org.yicheng.record.PersonalPerformanceRecord;
 
-public class Student extends Person{
+public class Student extends Person {
     private PersonalAttendanceRecord attendanceRecord;
     private PersonalPerformanceRecord performanceRecord;
     public Student(){

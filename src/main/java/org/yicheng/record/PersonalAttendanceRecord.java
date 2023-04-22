@@ -1,7 +1,6 @@
-package org.yicheng.entity.record;
+package org.yicheng.record;
 
 import java.util.LinkedList;
-import java.util.Objects;
 
 public class PersonalAttendanceRecord{
     private String studentName;
@@ -29,4 +28,15 @@ public class PersonalAttendanceRecord{
     public void setRecord(LinkedList<Attendance> record) {
         this.record = record;
     }
+
+    public void addAttendance(Attendance attendance){
+        record.add(attendance);
+    }
+
+    public void addAttendance(String date, Attendance.State state){
+        Attendance attendance = new Attendance(studentName, studentId, date, state);
+        record.add(attendance);
+    }
+
+
 }

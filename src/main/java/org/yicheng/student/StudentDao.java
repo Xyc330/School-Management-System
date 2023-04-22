@@ -1,15 +1,15 @@
-package org.yicheng.dao;
+package org.yicheng.student;
 
-import org.yicheng.entity.Student;
+import org.yicheng.BaseDao;
 import org.yicheng.database.Database;
-import org.yicheng.entity.record.Attendance;
-import org.yicheng.entity.record.Grade;
+import org.yicheng.record.Attendance;
+import org.yicheng.record.Grade;
 
 import java.util.Optional;
 
 public class StudentDao extends BaseDao<Student> {
     public StudentDao(){
-        super.map = Database.students;
+        map = Database.students;
     }
 
     public void addAttendance(Attendance att){
@@ -54,5 +54,15 @@ public class StudentDao extends BaseDao<Student> {
     public Grade getLastGrade(Integer studentId){
         Student student = Database.students.get(studentId);
         return student.getPerformanceRecord().getRecord().getLast();
+    }
+
+    public Optional<Integer> getIdByName(String name){
+        for(Student s : map.values()){
+            if(s.getName().equalsIgnoreCase(name)){
+                return Optional.of(s.getId());
+            }
+        }
+        return Optional.empty();
+
     }
 }

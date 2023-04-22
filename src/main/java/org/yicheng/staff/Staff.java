@@ -1,6 +1,8 @@
-package org.yicheng.entity;
+package org.yicheng.staff;
 
-public class Staff extends Person{
+import org.yicheng.entity.Person;
+
+public class Staff extends Person {
 
     private String role;
     public Staff(){
